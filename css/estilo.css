@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto',sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color-100:#DFEBEB;
+    --primary-corlor-200:#f4fafa;
+    --text-color:#15161A;
+    --segudario-color:#fff;
+
+    font-size: 40%;
+}
+
+a{
+    color: var(--text-color);
+}
+
+body{
+    background: var(--primary-color-100);
+    color: var(--text-color);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+form{
+    background: var(--segudario-color) ;
+    width: min(73rem, 87%);
+    margin: auto;
+    padding: 9rem;
+    border-radius: 3.2rem;
+    box-shadow: 0 0 4.8rem rgba(0 0 0 / .1);
+}
+
+form *{
+    font-size: 1.4rem;
+}
+
+fieldset{
+    border: 0;
+}
+
+fieldset legend{
+    font-size: 3.2rem;
+    font-family: 'Roboto',sans-serif;
+}
+
+ /* radio*/
+
+ .radio-wrapper{
+  border-radius: 1.6rem;
+  background-color: var(--primary-corlor-200);
+  border: 1px solid #bbc1c1;
+  padding: 2.4rem;
+ }
+
+.radio-wrapper input[type="radio"]{
+appearance: none;
+border: 1px solid #bbc1c1;
+padding: 1.2rem;
+border-radius: 50%;
+background: white;
+width: 2.8rem;
+height: 2.8rem;
+}
+
+.radio-wrapper input[type="radio"]:checked {
+    background-image:radial-gradient(white 35%, black 40%)
+}
+
+.radio-wrapper :not(:has(:checked)){
+    opacity: .6;
+}
+
+ .radio-wrapper > div{
+    display: flex;
+    gap: .8rem;
+ }
+
+ .radio-wrapper label{
+  font-size:2rem ;
+ }
+
+ .radio-wrapper p{
+    margin-top: 1rem;
+    padding-left:3.8rem;
+ }
+
+ legend + .radio-wrapper{
+  margin-top: 6rem;
+ }
+
+ .radio-wrapper  + .radio-wrapper,
+ .checkbox-wrapper , .checkbox-wrapper{
+    margin-top: 2.4rem;
+ }
+
+  /* Checkbox*/
+
+  .radio-wrapper  + .checkbox-wrapper{
+    margin-top: 4.8rem;
+    }
+
+ .checkbox-wrapper label{
+    margin-top: .4rem;
+ }
+
+ .checkbox-wrapper{
+    display: flex;
+    gap: .8rem;
+    padding-inline: 2.2rem;
+ }
+
+.checkbox-wrapper input[type="checkbox"]{
+    appearance: none;
+    flex-shrink: 0;
+    width: 2.8rem;
+    height: 2.8rem;
+    border: 1px solid #6b7473;
+    border-radius: .6rem;
+    position: relative;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked::before{
+content: "✔";
+font-size: 2.4rem;
+position: absolute;
+top:-0.6rem;
+left: .4;
+}
+
+ /* button*/
+
+ button:hover{
+ filter: brightness(1.2);
+ cursor: pointer;
+ }
+
+button{
+    margin-top: 5.8rem;
+    width: 100%;
+   padding-block: 2rem;
+  background: #130f28;
+    color: #fff;
+    border: 0;
+}
+
+
+ small{
+   text-align: center;
+   display: block;
+   margin: 2.8rem;
+}
+
